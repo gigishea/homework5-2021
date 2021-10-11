@@ -76,8 +76,7 @@ a:hover{
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
-  position: relative;
-  top: 40px;
+  
 
   
 
@@ -92,7 +91,7 @@ a:hover{
 }
 
 /* Requirement 4 code here*/
-:focus{
+*:focus{
   border: solid 2px;
 }
 
@@ -102,6 +101,7 @@ a:hover{
   grid-template-columns: 1fr 5fr 1fr;
   grid-template-rows: repeat(5, auto);
   row-gap: 15px;
+  object-fit: cover;
   /* Requirement 5 code here*/
 
 }
@@ -109,7 +109,7 @@ a:hover{
 /* Remainder of requirements here: */
 
 header{
-  background-image: url('../images/header.jpg');
+  background-image: url("../images/header.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed; /* Parallax effect */
   background-position: center; /* Parallax effect */
@@ -204,6 +204,9 @@ header{
     display: grid;
     grid-template-columns: 50px auto 500px auto 50px;
     grid-template-rows: repeat(5, 400px);
+    object-fit: cover;
+    row-gap:15px;
+
    
   }
 
